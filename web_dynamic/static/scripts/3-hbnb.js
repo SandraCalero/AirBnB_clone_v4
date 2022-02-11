@@ -45,9 +45,6 @@ $(document).ready(function () {
                     place.number_bathrooms
                   } Bathroom${place.number_bathrooms !== 1 ? 's' : ''}</div>
             </div>
-            <div class='user'>
-                  <b>Owner:</b>
-                </div>
                 <div class='description'>
               ${place.description}
                 </div>
