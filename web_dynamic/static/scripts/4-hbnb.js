@@ -50,15 +50,15 @@ $(document).ready(function () {
                 </div>
           </article>`);
       }
-    },
+    }
   });
   $('#search').click(function () {
     $('article').remove();
-    json_request = { 'amenities': Object.keys(dictChecked) };
+    const jsonRequest = { amenities: Object.keys(dictChecked) };
     $.ajax({
       url: 'http://0.0.0.0:5001/api/v1/places_search/',
       type: 'POST',
-      data: JSON.stringify(json_request),
+      data: JSON.stringify(jsonRequest),
       contentType: 'application/json; charset=utf-8',
       dataType: 'json',
       success: function (searchPlaces) {
@@ -84,7 +84,7 @@ $(document).ready(function () {
                   </div>
             </article>`);
         }
-      },
+      }
     });
   });
 });
