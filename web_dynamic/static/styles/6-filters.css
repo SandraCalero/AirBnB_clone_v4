@@ -107,3 +107,6 @@ button:hover {
 .locations:hover .popover {
     visibility: visible;
 }
+.popover > ul {
+    overflow-y: scroll;
+}
